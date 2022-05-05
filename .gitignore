@@ -1,0 +1,16 @@
+# GIT Ignore
+
+node_modules
+.vscode
+package-lock.json
+.DS_Store
+
+src
+
+# Front-End Mentor
+design
+style-guide.md
+*.sketch
+*.fig
+*.xd
+.prettierignore
