@@ -22,13 +22,14 @@
     <!-- Snap Logo -->
     <img class="logo-snap" src="public/images/logo.svg" alt="Snap logo">
 
-    <!-- Navigation -->
+    <!-- Desktop Navigation -->
     <nav class="nav nav--dskt" role="navigation">
       <ul class="nav__ul-dskt nav__ul-dskt--primary">
         <li>
           <a href="#" aria-haspopup="true">
-            Features
+            <span>Features</span>
             <i class="fa-solid fa-angle-down"></i>
+            <i class="fa-solid fa-angle-up"></i>
           </a>
           <ul class="nav__ul-dskt-subnav1" aria-hidden="true" aria-expanded="false" aria-label="features submenu">
             <li>
@@ -48,7 +49,11 @@
             </li>
           </ul>
         </li>
-        <li><a href="#" aria-haspopup="true">Company</a>
+        <li><a href="#" aria-haspopup="true">
+              <span>Company</span>
+              <i class="fa-solid fa-angle-down"></i>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
           <ul class="nav__ul-dskt-subnav2" aria-hidden="true" aria-expanded="false" aria-label="company submenu">
             <li>
               <a href="#">History</a>
@@ -74,44 +79,48 @@
     </button>
 
   </header>
+
+  <!-- Mobile Nav -->
   <nav class="nav nav--mbl" role="navigation">
     <ul class="nav__ul-mbl nav__ul-mbl--primary">
       <li> <!--  Features -->
-        <a href="#" aria-haspopup="true">
-          Features
-          <i class="fa-solid fa-angle-down fa-sm"></i>
-          <i class="fa-solid fa-angle-up fa-sm"></i>
+        <a class="nav__toggle" href="#" aria-haspopup="true">
+          <span>Features</span>
+          <a class="nav__arrow" href="#"><i class="fa-solid fa-angle-down fa-sm"></i></a>
         </a>
-        <ul class="nav__ul-mbl-subnav" aria-hidden="true" aria-expanded="false" aria-label="features submenu">
+        <ul class="nav__ul-mbl-subnav" id="mbl-subnav-first" aria-hidden="true" aria-expanded="false" aria-label="features submenu">
           <li> <!--  To Do List -->
             <a href="#">
               <img src="public/images/icon-todo.svg" alt="Todo">
-              Todo List
+              <span>Todo List</span>
             </a>
           </li>
           <li> <!--  Calendar -->
             <a href="#">
               <img src="public/images/icon-calendar.svg" alt="Calender">
-              Calendar
+              <span>Calendar</span>
             </a>
           </li>
           <li> <!--  Reminders -->
             <a href="#">
               <img src="public/images/icon-reminders.svg" alt="Reminders">
-              Reminders
+              <span>Reminders</span>
             </a>
           </li>
           <li> <!--  Planning -->
             <a href="#">
               <img src="public/images/icon-planning.svg" alt="Planning">
-              Planning
+              <span>Planning</span>
             </a>
           </li>
         </ul>
       </li>
       <li> <!--  Company -->
-        <a href="#" aria-haspopup="true">Company</a>
-        <ul class="nav__ul-mbl-subnav" aria-hidden="true" aria-expanded="false" aria-label="company submenu">
+        <a href="#" aria-haspopup="true">
+          <span>Company</span>
+          <i class="fa-solid fa-angle-down fa-sm"></i>
+        </a>
+        <ul class="nav__ul-mbl-subnav" id="mbl-subnav-second" aria-hidden="true" aria-expanded="false" aria-label="company submenu">
           <li> <!--  History -->
             <a href="#">History</a>
           </li>
