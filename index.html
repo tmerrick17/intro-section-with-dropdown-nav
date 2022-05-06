@@ -3,35 +3,184 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="public/images/favicon-32x32.png">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
 
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <script src="https://kit.fontawesome.com/ac8a13df38.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="public/css/main.min.css">
+
+  <title>Intro section with dropdown navigation</title>
 </head>
 <body>
 
-  Features
-  Company
-  Careers
-  About
+  <header>
 
-  Login
-  Register
+    <!-- Snap Logo -->
+    <img class="logo-snap" src="public/images/logo.svg" alt="Snap logo">
 
-  Make remote work
+    <!-- Navigation -->
+    <nav class="nav nav--dskt" role="navigation">
+      <ul class="nav__ul-dskt nav__ul-dskt--primary">
+        <li>
+          <a href="#" aria-haspopup="true">
+            Features
+            <i class="fa-solid fa-angle-down"></i>
+          </a>
+          <ul class="nav__ul-dskt-subnav1" aria-hidden="true" aria-expanded="false" aria-label="features submenu">
+            <li>
+              <img src="public/images/icon-todo.svg" alt="Todo">
+              <a href="#">Todo List</a>
+            </li>
+            <li>
+              <img src="public/images/icon-calendar.svg" alt="Calender">
+              <a href="#">Calendar</a>
+            </li>
+            <li>
+              <img src="public/images/icon-reminders.svg" alt="Reminders">
+              <a href="#">Reminders</a></li>
+            <li>
+              <img src="public/images/icon-planning.svg" alt="Planning">
+              <a href="#">Planning</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#" aria-haspopup="true">Company</a>
+          <ul class="nav__ul-dskt-subnav2" aria-hidden="true" aria-expanded="false" aria-label="company submenu">
+            <li>
+              <a href="#">History</a>
+            </li>
+            <li>
+              <a href="#">Our Team</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <ul class="nav__ul-dskt nav__ul-dskt--secondary">
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger">
+      <div class="hamburger__bar"></div>
+    </button>
 
-  Get your team in sync, no matter your location. Streamline processes,
-  create team rituals, and watch productivity soar.
+  </header>
+  <nav class="nav nav--mbl" role="navigation">
+    <ul class="nav__ul-mbl nav__ul-mbl--primary">
+      <li> <!--  Features -->
+        <a href="#" aria-haspopup="true">
+          Features
+          <i class="fa-solid fa-angle-down fa-sm"></i>
+          <i class="fa-solid fa-angle-up fa-sm"></i>
+        </a>
+        <ul class="nav__ul-mbl-subnav" aria-hidden="true" aria-expanded="false" aria-label="features submenu">
+          <li> <!--  To Do List -->
+            <a href="#">
+              <img src="public/images/icon-todo.svg" alt="Todo">
+              Todo List
+            </a>
+          </li>
+          <li> <!--  Calendar -->
+            <a href="#">
+              <img src="public/images/icon-calendar.svg" alt="Calender">
+              Calendar
+            </a>
+          </li>
+          <li> <!--  Reminders -->
+            <a href="#">
+              <img src="public/images/icon-reminders.svg" alt="Reminders">
+              Reminders
+            </a>
+          </li>
+          <li> <!--  Planning -->
+            <a href="#">
+              <img src="public/images/icon-planning.svg" alt="Planning">
+              Planning
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li> <!--  Company -->
+        <a href="#" aria-haspopup="true">Company</a>
+        <ul class="nav__ul-mbl-subnav" aria-hidden="true" aria-expanded="false" aria-label="company submenu">
+          <li> <!--  History -->
+            <a href="#">History</a>
+          </li>
+          <li> <!--  Our Team -->
+            <a href="#">Our Team</a>
+          </li>
+          <li> <!--  Blog -->
+            <a href="#">Blog</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav__marg-bot"> <!--  Careers -->
+        <a href="#">Careers</a>
+      </li>
+      <li class="nav__marg-bot"> <!--  About -->
+        <a href="#">About</a>
+      </li>
+    </ul>
+    <ul class="nav__ul-mbl nav__ul-mbl--secondary">
+      <li>  <!--  Login -->
+        <a href="#">Login</a>
+      </li>
+      <li> <!--  Register -->
+        <button href="#">Register</button>
+      </li>
+    </ul>
+  </nav>
 
-  Learn more
+  <main>
+
+    <!-- Hero image -->
+    <img class="img-hero-mbl" src="public/images/image-hero-mobile.png" alt="Person holding laptop with graphics around it">
+    <img class="img-hero-dsk" src="public/images/image-hero-desktop.png" alt="Person holding laptop with graphics around it">
+
+    <!-- Intro header & text -->
+    <section class="content-intro">
+
+      <h1>Make remote work</h1>
+      <p>
+        Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.
+      </p>
+
+      <button>Learn more</button>
+
+      <!-- Brands -->
+      <div class="content-intro__brands">
+        <img src="public/images/client-databiz.svg" alt="Data Biz logo">
+        <img src="public/images/client-audiophile.svg" alt="Audiophile logo">
+        <img src="public/images/client-meet.svg" alt="Meet logo">
+        <img src="public/images/client-maker.svg" alt="Maker logo">
+      </div>
+
+    </section>
+
+  </main>
 
   <footer>
+
     <p>Challenge by
         <a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">
         Frontend Mentor</a> Coded by <a class="footer__link" href="https://github.com/tmerrick17">
         Trevor Merrick
         </a>
     </p>
-</footer>
+
+  </footer>
+
+<script src="public/js/main.js"></script>
+
 </body>
 </html>

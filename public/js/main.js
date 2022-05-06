@@ -1,0 +1,1 @@
+const btnHamburger=document.querySelector(".hamburger"),navMbl=document.querySelector(".nav--mbl");btnHamburger.addEventListener("click",(()=>{btnHamburger.classList.toggle("is-active"),navMbl.classList.toggle("is-active")}));
