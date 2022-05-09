@@ -28,8 +28,7 @@
         <li>
           <a href="#" aria-haspopup="true">
             <span>Features</span>
-            <i class="fa-solid fa-angle-down"></i>
-            <i class="fa-solid fa-angle-up"></i>
+            <i class="fa-solid fa-angle-down nav__arrow"></i>
           </a>
           <ul class="nav__ul-dskt-subnav1" aria-hidden="true" aria-expanded="false" aria-label="features submenu">
             <li>
@@ -51,8 +50,7 @@
         </li>
         <li><a href="#" aria-haspopup="true">
               <span>Company</span>
-              <i class="fa-solid fa-angle-down"></i>
-              <i class="fa-solid fa-angle-up"></i>
+              <i class="fa-solid fa-angle-down nav__arrow"></i>
             </a>
           <ul class="nav__ul-dskt-subnav2" aria-hidden="true" aria-expanded="false" aria-label="company submenu">
             <li>
@@ -71,7 +69,7 @@
       </ul>
       <ul class="nav__ul-dskt nav__ul-dskt--secondary">
         <li><a href="#">Login</a></li>
-        <li><a href="#">Register</a></li>
+        <li><button href="#">Register</button></li>
       </ul>
     </nav>
     <button class="hamburger">
@@ -84,11 +82,11 @@
   <nav class="nav nav--mbl" role="navigation">
     <ul class="nav__ul-mbl nav__ul-mbl--primary">
       <li> <!--  Features -->
-        <a class="nav__toggle" href="#" aria-haspopup="true">
+        <a class="nav__toggle1" href="#" aria-haspopup="true">
           <span>Features</span>
-          <a class="nav__arrow" href="#"><i class="fa-solid fa-angle-down fa-sm"></i></a>
+          <i class="fa-solid fa-angle-down fa-sm nav__arrow"></i>
         </a>
-        <ul class="nav__ul-mbl-subnav" id="mbl-subnav-first" aria-hidden="true" aria-expanded="false" aria-label="features submenu">
+        <ul class="nav__ul-mbl-subnav" id="mbl-subnav1" aria-hidden="true" aria-expanded="false" aria-label="features submenu">
           <li> <!--  To Do List -->
             <a href="#">
               <img src="public/images/icon-todo.svg" alt="Todo">
@@ -116,11 +114,11 @@
         </ul>
       </li>
       <li> <!--  Company -->
-        <a href="#" aria-haspopup="true">
+        <a class="nav__toggle2" href="#" aria-haspopup="true">
           <span>Company</span>
           <i class="fa-solid fa-angle-down fa-sm"></i>
         </a>
-        <ul class="nav__ul-mbl-subnav" id="mbl-subnav-second" aria-hidden="true" aria-expanded="false" aria-label="company submenu">
+        <ul class="nav__ul-mbl-subnav" id="mbl-subnav2" aria-hidden="true" aria-expanded="false" aria-label="company submenu">
           <li> <!--  History -->
             <a href="#">History</a>
           </li>
@@ -132,7 +130,7 @@
           </li>
         </ul>
       </li>
-      <li class="nav__marg-bot"> <!--  Careers -->
+      <li> <!--  Careers -->
         <a href="#">Careers</a>
       </li>
       <li class="nav__marg-bot"> <!--  About -->
@@ -164,7 +162,7 @@
         create team rituals, and watch productivity soar.
       </p>
 
-      <button>Learn more</button>
+      <a>Learn more</a>
 
       <!-- Brands -->
       <div class="content-intro__brands">
